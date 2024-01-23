@@ -24,8 +24,10 @@ const Project = () => {
 				<div className='py-14 text-white text-3xl flex justify-between gap-44'>
 					<img className='w-1/2' src={details.img} alt='' />
 					<div className='w-1/2'>
-						<div>{details.title}</div>
-						<div>{details.desc}</div>
+						<div className='mb-10'>
+							<h3>{details.title}</h3>
+						</div>
+						<div className='mb-10'>{details.desc}</div>
 						<div>
 							<a href={details.url}>Take a look</a>
 						</div>

@@ -35,6 +35,7 @@ const Form = () => {
 		name: '',
 		email: '',
 		question: '',
+		fun: 'Can I change?',
 	})
 
 	const handleChange = e => {
@@ -67,7 +68,7 @@ const Form = () => {
 						name='name'
 						placeholder='Your name'
 						onChange={handleChange}
-						// {...register('name')}
+						{...register('name')}
 					/>
 					{/* {errors.name && <p style={{ color: 'red' }}>{errors.name.message}</p>} */}
 					<Input
@@ -76,7 +77,7 @@ const Form = () => {
 						name='email'
 						placeholder='Your email'
 						onChange={handleChange}
-						// {...register('email')}
+						{...register('email')}
 					/>
 					{/* {errors.email && <p style={{ color: 'red' }}>{errors.email.message}</p>} */}
 					<Input
@@ -85,7 +86,7 @@ const Form = () => {
 						name='question'
 						placeholder='Your question'
 						onChange={handleChange}
-						// {...register('question')}
+						{...register('question')}
 					/>
 					{/* {errors.question && (
 					<p style={{ color: 'red' }}>{errors.email.message}</p>
@@ -94,12 +95,22 @@ const Form = () => {
 						<Button variant='light' text='Send' disabled={isLoading} />
 						{/* <Button variant='light' text='Clear' onClick={handleClear} /> */}
 					</div>
+					{/* <div className='mb-10'>Your name: {form.name}</div>
+					<div className='mb-10'>Your email: {form.email}</div>
+					<div className='mb-10'>You want to know: {form.question}</div> */}
 				</form>
 			)}
-			<div className='text-white text-3xl'>
-				<div className='mb-10'>Your name: {form.name}</div>
-				<div className='mb-10'>Your email: {form.email}</div>
-				<div className='mb-10'>You want to know: {form.question}</div>
+			<div>
+				<Input
+					ref={inputRef}
+					type='text'
+					name='fun'
+					placeholder='Type something...'
+					onChange={handleChange}
+				/>
+				<div className='text-white text-3xl'>
+					<p>{form.fun}</p>
+				</div>
 			</div>
 		</div>
 	)

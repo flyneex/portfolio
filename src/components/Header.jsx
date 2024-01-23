@@ -28,7 +28,7 @@ const Header = () => {
 			<div
 				ref={menuRef}
 				className={cn(
-					`z-30 absolute bg-black xl:bg-transparent xl:p-0 p-14 rounded-2xl top-0 -right-72 xl:right-0 xl:flex xl:gap-20 xl:relative align-center ${
+					`z-30 absolute bg-black xl:bg-transparent xl:p-0 p-14 rounded-2xl top-0 -right-72 xl:right-0 xl:flex xl:gap-20 xl:relative items-center ${
 						menu ? 'active-menu' : ''
 					}`,
 					{
@@ -41,13 +41,15 @@ const Header = () => {
 					<Navbar />
 				</div>
 				<div className='gap-10 xl:flex'>
-					<div>
-						<img
-							className='cursor-pointer hover:scale-90 transition-all my-10 xl:m-0'
-							src={Instagram}
-							alt='Instagram'
-							style={{ width: '45px' }}
-						/>
+					<div className='social-hover'>
+						<a href='#'>
+							<img
+								className='hover:scale-90 transition-all my-10 xl:m-0'
+								src={Instagram}
+								alt='Instagram'
+								style={{ width: '45px' }}
+							/>
+						</a>
 					</div>
 					<div className='xl:flex gap-5'>
 						<div onClick={handlerModal} className='mb-5 xl:m-0'>

@@ -1,17 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-	font-family: 'M PLUS 1', sans-serif;
+	font-family: 'Acme', sans-serif;
 	background: #1e1e1e;
 }
 
 .wrapper {
 	max-width: 1366px;
 	margin: 0 auto;
+}
+
+h3 {
+	@apply text-6xl;
+}
+
+h5 {
+	@apply text-3xl;
 }
 
 @media (max-width: 1366px) {
@@ -227,7 +235,7 @@ body {
 
 .show-modal {
 	opacity: 1;
-	top: 40%;
+	top: 5%;
 	transition: opacity 2s cubic-bezier(0.075, 0.82, 0.165, 1),
 		top 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 	background: rgba(255, 255, 255, 0.5);
@@ -253,14 +261,18 @@ body {
 	@apply mb-6 text-xl;
 }
 
-.a-box h3 {
+.a-box h5 {
 	@apply mb-5 text-green-300;
 }
 
 .a-box > div {
-	@apply border-green-500 border p-10 rounded-3xl text-xl;
+	@apply border-blue-400 border p-10 rounded-3xl text-xl;
 }
 
 section:nth-child(2n + 1):not(.billboard) {
 	background-color: #212121;
+}
+
+.social-hover a {
+	@apply hover:scale-90 transition-all;
 }

@@ -57,26 +57,28 @@ const Portfolio = () => {
 						<div className='description text-left p-5 relative'>
 							<div className='flex gap-3'>
 								<div className='hover:text-red-500 cursor-pointer'>
-									<CiHeart size={20} onClick={handleCounter} />
+									<CiHeart size={42} onClick={handleCounter} />
 								</div>
 								<CiChat1
 									className='hover:text-blue-500 cursor-pointer'
-									size={20}
+									size={42}
 									onClick={handleComment}
 								/>
 								<CiLocationArrow1
 									className='hover:text-green-500 cursor-pointer'
-									size={20}
+									size={42}
 									onClick={handleShare}
 								/>
 							</div>
-							<div className='block pt-3'>{count} likes</div>
-							<div className=''>{comment}</div>
-							<div className='text-3xl mt-5 main-color'>{project.title}</div>
-							<div className='mt-3 mb-10'>{project.desc}</div>
+							<div className='block pt-3 text-xl'>{count} likes</div>
+							<div className='text-xl'>{comment}</div>
+							<div className='mt-5 text-green-500'>
+								<h5>{project.title}</h5>
+							</div>
+							<div className='mt-3 mb-10 text-lg'>{project.desc}</div>
 							<Link
 								to={`/project/${project.slug}`}
-								className='absolute -right-1 -bottom-1 bg-[#181818] p-3 border-black rounded-tl-3xl rounded-br-3xl'
+								className='absolute -right-1 -bottom-1 bg-green-500 p-3 border-black rounded-tl-3xl rounded-br-3xl'
 							>
 								<IoArrowForwardCircleOutline
 									size={45}
