@@ -22,6 +22,10 @@ h5 {
 	@apply text-3xl;
 }
 
+p {
+	@apply mb-5;
+}
+
 @media (max-width: 1366px) {
 	.wrapper {
 		@apply mx-10;

@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom'
+import Form from '../UI/Form'
 import projects from '../assets/projects'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
@@ -34,7 +35,7 @@ const Project = () => {
 					</div>
 				</div>
 			</div>
-			{/* <Form /> */}
+			<Form />
 			<Footer />
 		</>
 	)
