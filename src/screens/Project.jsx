@@ -34,6 +34,7 @@ const Project = () => {
 					</div>
 				</div>
 			</div>
+			{/* <Form /> */}
 			<Footer />
 		</>
 	)
