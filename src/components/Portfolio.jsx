@@ -43,14 +43,14 @@ const Portfolio = () => {
 	return (
 		<div className='wrapper py-32 relative'>
 			<Title title='Portfolio' />
-			<div className='grid grid-cols-1 gap-7 lg:grid-cols-2 xl:grid-cols-3'>
+			<div className='grid grid-cols-1 gap-16 lg:grid-cols-2 xl:grid-cols-2 mt-5'>
 				{projects.map(project => (
 					<div
 						key={project.id}
 						className='portfolio-item rounded-3xl bg-white text-zinc-900 z-10'
 					>
 						<img
-							className='rounded-3xl hover:scale-100'
+							className='rounded-tl-3xl rounded-tr-3xl hover:scale-100 w-full h-96 object-cover'
 							src={project.img}
 							alt='Image project'
 						/>
@@ -76,9 +76,12 @@ const Portfolio = () => {
 							<div className='mt-3 mb-10'>{project.desc}</div>
 							<Link
 								to={`/project/${project.slug}`}
-								className='absolute -right-1 -bottom-1 bg-[#181818] p-3 border-black rounded-tl-3xl'
+								className='absolute -right-1 -bottom-1 bg-[#181818] p-3 border-black rounded-tl-3xl rounded-br-3xl'
 							>
-								<IoArrowForwardCircleOutline size={45} />
+								<IoArrowForwardCircleOutline
+									size={45}
+									className='hover:-rotate-90 transition-all duration-500'
+								/>
 							</Link>
 						</div>
 					</div>

@@ -30,16 +30,16 @@ const About = () => {
 						Science and have completed several online courses to keep up with
 						the latest trends and advancements in web development. I'm
 						well-versed in various content management systems, including
-						WordPress, Drupal, and Joomla, and can create custom themes and
-						plugins to meet specific requirements. In addition to web
-						development, I have experience in search engine optimization (SEO)
-						and social media integration, which helps me to create websites that
-						are not only aesthetically pleasing but also rank well in search
-						engine results pages (SERPs) and engage with social media audiences.
-						I'm a detail-oriented professional who takes pride in my work and
-						always strives to meet the expectations of my clients. If you're
-						looking for a reliable and experienced web developer who can create
-						a high-quality website that meets your business needs, look no
+						WordPress and Joomla, and can create custom themes and plugins to
+						meet specific requirements. In addition to web development, I have
+						experience in search engine optimization (SEO) and social media
+						integration, which helps me to create websites that are not only
+						aesthetically pleasing but also rank well in search engine results
+						pages (SERPs) and engage with social media audiences. I'm a
+						detail-oriented professional who takes pride in my work and always
+						strives to meet the expectations of my clients. If you're looking
+						for a reliable and experienced web developer who can create a
+						high-quality website that meets your business needs, look no
 						further. Get in touch, and let's bring your ideas to life!
 					</div>
 				</div>

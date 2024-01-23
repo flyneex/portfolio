@@ -2,7 +2,7 @@ import Title from '../UI/Title'
 
 const Advantages = () => {
 	return (
-		<div className='wrapper relative py-48'>
+		<div className='wrapper relative pt-52 pb-32'>
 			<Title title='Advantages' />
 			<div className='a-box text-white grid grid-cols-1 gap-7 lg:grid-cols-2 xl:grid-cols-4'>
 				<div>

@@ -28,7 +28,7 @@ const Header = () => {
 			<div
 				ref={menuRef}
 				className={cn(
-					`z-30 absolute bg-black xl:bg-transparent xl:p-0 p-14 rounded-2xl top-0 -right-72 xl:right-0 xl:flex xl:gap-20 xl:relative ${
+					`z-30 absolute bg-black xl:bg-transparent xl:p-0 p-14 rounded-2xl top-0 -right-72 xl:right-0 xl:flex xl:gap-20 xl:relative align-center ${
 						menu ? 'active-menu' : ''
 					}`,
 					{
@@ -50,13 +50,14 @@ const Header = () => {
 						/>
 					</div>
 					<div className='xl:flex gap-5'>
-						<div onClick={handlerModal} className='mb-5'>
+						<div onClick={handlerModal} className='mb-5 xl:m-0'>
 							<Button variant='light' text='Get in touch' />
 						</div>
 						<div onClick={handlerLogin}>
 							<Button
 								variant='light'
 								text={user.name === 'Guest01' ? 'Login' : 'Logout'}
+								className='bg-lime-500'
 							/>
 						</div>
 					</div>

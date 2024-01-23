@@ -6,7 +6,7 @@
 
 body {
 	font-family: 'M PLUS 1', sans-serif;
-	background: #181818;
+	background: #1e1e1e;
 }
 
 .wrapper {
@@ -250,7 +250,7 @@ body {
 }
 
 .info-me > div {
-	@apply border-b-2 mb-6 text-2xl;
+	@apply mb-6 text-xl;
 }
 
 .a-box h3 {
@@ -259,4 +259,8 @@ body {
 
 .a-box > div {
 	@apply border-green-500 border p-10 rounded-3xl text-xl;
+}
+
+section:nth-child(2n + 1):not(.billboard) {
+	background-color: #212121;
 }

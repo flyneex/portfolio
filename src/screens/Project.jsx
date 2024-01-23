@@ -21,9 +21,9 @@ const Project = () => {
 		<>
 			<Header />
 			<div className='wrapper'>
-				<div className='py-14 text-white text-3xl flex justify-between'>
-					<img src={details.img} alt='' style={{ width: '300px' }} />
-					<div>
+				<div className='py-14 text-white text-3xl flex justify-between gap-44'>
+					<img className='w-1/2' src={details.img} alt='' />
+					<div className='w-1/2'>
 						<div>{details.title}</div>
 						<div>{details.desc}</div>
 						<div>
