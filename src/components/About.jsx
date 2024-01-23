@@ -42,7 +42,6 @@ const About = () => {
 						a high-quality website that meets your business needs, look no
 						further. Get in touch, and let's bring your ideas to life!
 					</div>
-					<Button variant='dark' />
 				</div>
 			</div>
 		</div>

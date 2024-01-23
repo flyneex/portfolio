@@ -9,7 +9,7 @@ const Tabs = () => {
 	return (
 		<div className='wrapper relative pt-40 pb-20'>
 			<Title title='Skills' />
-			<div className='tabs flex gap-3 z-10'>
+			<div className='tabs flex gap-3 relative'>
 				{tabs.map(tab => (
 					<div
 						key={tab.id}
