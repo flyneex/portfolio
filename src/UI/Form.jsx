@@ -57,7 +57,7 @@ const Form = () => {
 	// }
 
 	return (
-		<div className='wrapper grid grid-cols-2 gap-20'>
+		<div className='wrapper grid grid-cols-1 xl:grid-cols-2 gap-20'>
 			{isSuccess ? (
 				<>Form is send</>
 			) : (

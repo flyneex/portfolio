@@ -8,7 +8,7 @@ const Input = React.forwardRef((props, ref) => {
 			ref={ref}
 			value={value}
 			name={name}
-			className='block mb-5 text-center drop-shadow-2xl outline-none rounded-lg p-5 w-96 opacity-50'
+			className='block mb-5 text-center drop-shadow-2xl outline-none rounded-lg p-5 w-full opacity-50'
 			type={type}
 			placeholder={placeholder}
 			onChange={onChange}

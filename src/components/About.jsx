@@ -17,7 +17,7 @@ const About = () => {
 	return (
 		<div className='wrapper relative py-40'>
 			<Title title='About me' />
-			<div className='bg-slate-300 rounded-2xl p-14 z-10 relative grid grid-cols-1 xl:grid-cols-2 gap-14'>
+			<div className='bg-slate-300 rounded-2xl p-5 z-10 relative grid grid-cols-1 xl:grid-cols-2 gap-14'>
 				<img src={Photo} alt='' className='w-full' />
 				<div className='info-me'>
 					<div>

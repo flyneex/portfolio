@@ -26,7 +26,7 @@ const Countdown = () => {
 				<h3 className='text-4xl text-white text-center drop-shadow-xl mb-14'>
 					My B-Day will come in
 				</h3>
-				<div className='countdown-form text-white flex justify-center gap-10'>
+				<div className='countdown-form text-white xl:flex justify-center gap-10'>
 					<div>
 						<p>{days}</p> days
 					</div>

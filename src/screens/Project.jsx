@@ -22,7 +22,7 @@ const Project = () => {
 		<>
 			<Header />
 			<div className='wrapper'>
-				<div className='py-14 text-white text-3xl flex justify-between gap-44'>
+				<div className='py-14 text-white text-3xl xl:flex justify-between gap-44'>
 					<img className='w-1/2' src={details.img} alt='' />
 					<div className='w-1/2'>
 						<div className='mb-10'>
