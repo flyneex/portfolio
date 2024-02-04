@@ -47,13 +47,15 @@ const Portfolio = () => {
 				{projects.map(project => (
 					<div
 						key={project.id}
-						className='portfolio-item rounded-3xl bg-white text-zinc-900 z-10'
+						className='portfolio-item rounded-3xl bg-white text-zinc-900 z-10 shadow-xl shadow-green-400 border-4 border-green-400'
 					>
-						<img
-							className='rounded-tl-3xl rounded-tr-3xl hover:scale-100 w-full h-96 object-cover'
-							src={project.img}
-							alt='Image project'
-						/>
+						<div className='overflow-hidden z-10 rounded-tl-3xl rounded-tr-3xl'>
+							<img
+								className='rounded-tl-3xl rounded-tr-3xl hover:scale-110 w-full h-96 object-cover transition-all duration-500'
+								src={project.img}
+								alt='Image project'
+							/>
+						</div>
 						<div className='description text-left p-5 relative'>
 							<div className='flex gap-3'>
 								<div className='hover:text-red-500 cursor-pointer'>

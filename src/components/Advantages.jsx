@@ -4,7 +4,7 @@ const Advantages = () => {
 	return (
 		<div className='wrapper relative pt-40 xl:pt-52 pb-32'>
 			<Title title='Advantages' />
-			<div className='a-box text-white grid grid-cols-1 gap-7 lg:grid-cols-2 xl:grid-cols-3'>
+			<div className='a-box text-white grid grid-cols-1 gap-7 lg:grid-cols-2 xl:grid-cols-3 z-1 relative'>
 				<div>
 					<h5>Strong coding skills</h5>
 					<p>

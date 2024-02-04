@@ -8,7 +8,7 @@ const Tabs = () => {
 
 	return (
 		<div className='wrapper relative pt-40 pb-20'>
-			<Title title='Skills' />
+			<Title title='FAQ' />
 			<div className='tabs xl:flex gap-3 relative'>
 				{tabs.map(tab => (
 					<div

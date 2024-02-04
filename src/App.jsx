@@ -9,6 +9,7 @@ import Greeting from './components/Greeting'
 import Header from './components/Header'
 import Modal from './components/Modal'
 import Portfolio from './components/Portfolio'
+import Statistics from './components/Statistics'
 import Tabs from './components/Tabs'
 
 const App = () => {
@@ -38,13 +39,13 @@ const App = () => {
 			<section className='about'>
 				<About />
 			</section>
-			{/* <section className='statistics'>
+			<section className='statistics'>
 				<Statistics />
-			</section> */}
+			</section>
 			<section className='countdown'>
 				<Countdown />
 			</section>
-			<section className='form crystal-clear py-14'>
+			<section className='form'>
 				<Form />
 			</section>
 			<Footer count={count} handleCounter={handleCounter} />

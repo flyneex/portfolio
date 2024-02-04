@@ -270,7 +270,7 @@ p {
 }
 
 .a-box > div {
-	@apply border-blue-400 border p-10 rounded-3xl text-xl;
+	@apply border-blue-400 border p-10 rounded-3xl text-xl shadow-md shadow-blue-400 hover:bg-gray-700 hover:transition-all;
 }
 
 section:nth-child(2n + 1):not(.billboard) {
@@ -279,4 +279,21 @@ section:nth-child(2n + 1):not(.billboard) {
 
 .social-hover a {
 	@apply hover:scale-90 transition-all;
+}
+
+.carousel div {
+	transition: transform 400ms ease;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.carousel div:hover {
+	transform: translateY(-10px);
+}
+
+.carousel {
+	padding: 40px;
 }
