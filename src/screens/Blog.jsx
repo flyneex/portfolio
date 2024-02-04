@@ -10,7 +10,9 @@ const Blog = props => {
 			<div className='wrapper'>
 				{blogs.map(blog => (
 					<div key={blog.id}>
-						<div>{blog.img}</div>
+						<div>
+							<img src={blog.img} alt='' style={{ width: '45px' }} />
+						</div>
 						<div>{blog.title}</div>
 						<div>{blog.description}</div>
 					</div>

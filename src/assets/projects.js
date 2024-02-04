@@ -1,9 +1,11 @@
+import Todo from '/public/images/todo-snap.png'
+
 export default [
 	{
 		id: 1,
 		title: 'Todo List',
 		desc: 'App for adding tasks',
-		img: '../public/images/todo-snap.png',
+		img: Todo,
 		slug: 'todo-list',
 		url: 'https://quiet-zabaione-b7b2da.netlify.app',
 	},
