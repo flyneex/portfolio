@@ -4,7 +4,9 @@ const Page = () => {
 	return (
 		<>
 			<Navbar />
-			<h1>Go fuck yourself!</h1>
+			<div className=''>
+				<h1>Go fuck yourself!</h1>
+			</div>
 		</>
 	)
 }

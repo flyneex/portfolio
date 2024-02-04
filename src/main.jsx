@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 import { UserProvider } from './context/UserContext.jsx'
 import './index.css'
+import Blog from './screens/Blog.jsx'
 import NotFound404 from './screens/NotFound404'
 import Page from './screens/Page'
 import Project from './screens/Project'
@@ -21,13 +22,13 @@ const router = createBrowserRouter([
 		path: 'page',
 		element: <Page />,
 	},
-	// {
-	// 	path: 'portfolio',
-	// 	element: <Portfolio />,
-	// },
 	{
 		path: 'project/:slug',
 		element: <Project />,
+	},
+	{
+		path: 'blog',
+		element: <Blog />,
 	},
 ])
 
