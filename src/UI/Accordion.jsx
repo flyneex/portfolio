@@ -12,7 +12,7 @@ const Accordion = ({ title, content }) => {
 				<div className='acc-item mb-10' id={answer.id} key={answer.id}>
 					<div onClick={() => setId(answer.id)}>
 						<div
-							className='title flex justify-between items-center cursor-pointer border border-indigo-300 rounded-lg py-2 px-10'
+							className='title flex justify-between items-center cursor-pointer border-b border-indigo-300 py-2'
 							onClick={() => setIsOpen(!isOpen)}
 						>
 							<h5 className='color-white'>{answer.title}</h5>
@@ -22,14 +22,14 @@ const Accordion = ({ title, content }) => {
 						</div>
 					</div>
 					<div
-						className={`content grid overflow-hidden transition-all duration-400 ease-in-out text-white ${
+						className={`content grid text-white transition-all ${
 							isOpen === true && id === answer.id
 								? 'grid-rows-[1fr] opacity-100'
 								: 'grid-rows-[0fr] opacity-0'
 						}`}
 					>
 						<div className='overflow-hidden text-2xl'>
-							<p className='pt-3'>{answer.content}</p>
+							<p className='pt-5'>{answer.content}</p>
 						</div>
 					</div>
 				</div>
