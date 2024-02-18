@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import answers from '../assets/answers.js'
+import Title from './Title.jsx'
 
 const Accordion = ({ title, content }) => {
 	const [isOpen, setIsOpen] = useState(false)
 	const [id, setId] = useState(1)
 	return (
 		<>
+			<Title title='FAQ' />
 			{answers.map(answer => (
 				<div className='acc-item mb-10' id={answer.id} key={answer.id}>
 					<div onClick={() => setId(answer.id)}>
@@ -15,7 +17,7 @@ const Accordion = ({ title, content }) => {
 						>
 							<h5 className='color-white'>{answer.title}</h5>
 							<span style={{ fontSize: '45px', display: 'inline-block' }}>
-								{isOpen ? '-' : '+'}
+								{isOpen && id === answer.id ? '-' : '+'}
 							</span>
 						</div>
 					</div>

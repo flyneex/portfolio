@@ -40,7 +40,7 @@ const App = () => {
 			<section className='about'>
 				<About />
 			</section>
-			<section className='faq wrapper pt-20 pb-20'>
+			<section className='faq relative wrapper pt-40 pb-20'>
 				<Accordion />
 			</section>
 			<section className='statistics'>
