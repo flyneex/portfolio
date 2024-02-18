@@ -4,6 +4,7 @@ import { IoArrowForwardCircleOutline } from 'react-icons/io5'
 import 'react-multi-carousel/lib/styles.css'
 import { Link } from 'react-router-dom'
 import Title from '../UI/Title'
+import Tooltip from '../UI/Tooltip'
 import projects from '../assets/projects'
 
 const Portfolio = () => {
@@ -43,11 +44,11 @@ const Portfolio = () => {
 	return (
 		<div className='wrapper py-32 relative'>
 			<Title title='Portfolio' />
-			<div className='grid grid-cols-1 gap-16 lg:grid-cols-2 xl:grid-cols-2 mt-5'>
+			<div className='grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3 mt-5'>
 				{projects.map(project => (
 					<div
 						key={project.id}
-						className='portfolio-item rounded-3xl bg-white text-zinc-900 z-10 shadow-xl shadow-green-400 border-4 border-green-400'
+						className='portfolio-item rounded-3xl bg-white text-zinc-900 z-10 shadow-lg shadow-green-400 border-4 border-green-400'
 					>
 						<div className='overflow-hidden z-10 rounded-tl-3xl rounded-tr-3xl'>
 							<img
@@ -59,18 +60,24 @@ const Portfolio = () => {
 						<div className='description text-left p-5 relative'>
 							<div className='flex gap-3'>
 								<div className='hover:text-red-500 cursor-pointer'>
-									<CiHeart size={42} onClick={handleCounter} />
+									<Tooltip message={'Like'}>
+										<CiHeart size={42} onClick={handleCounter} />
+									</Tooltip>
 								</div>
-								<CiChat1
-									className='hover:text-blue-500 cursor-pointer'
-									size={42}
-									onClick={handleComment}
-								/>
-								<CiLocationArrow1
-									className='hover:text-green-500 cursor-pointer'
-									size={42}
-									onClick={handleShare}
-								/>
+								<Tooltip message={'Comment'}>
+									<CiChat1
+										className='hover:text-blue-500 cursor-pointer'
+										size={42}
+										onClick={handleComment}
+									/>
+								</Tooltip>
+								<Tooltip message={'Share'}>
+									<CiLocationArrow1
+										className='hover:text-green-500 cursor-pointer'
+										size={42}
+										onClick={handleShare}
+									/>
+								</Tooltip>
 							</div>
 							<div className='block pt-3 text-xl'>{count} likes</div>
 							<div className='text-xl'>{comment}</div>

@@ -1,3 +1,5 @@
+import WTF from '/public/images/77-770672.png'
+import Music from '/public/images/music-snap.png'
 import Todo from '/public/images/todo-snap.png'
 
 export default [
@@ -13,7 +15,7 @@ export default [
 		id: 2,
 		title: 'Music App',
 		desc: 'Listen music everywhere',
-		img: '../public/images/music-snap.png',
+		img: Music,
 		slug: 'music-app',
 		url: 'https://dazzling-rabanadas-ffd2d6.netlify.app',
 	},
@@ -21,7 +23,7 @@ export default [
 		id: 3,
 		title: 'Miracle Shop',
 		desc: 'In development',
-		img: '../../public/images/77-770672.png',
+		img: WTF,
 		slug: 'miracle',
 		url: '#',
 	},
