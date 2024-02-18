@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Accordion from './UI/Accordion'
 import Form from './UI/Form'
 import About from './components/About'
 import Advantages from './components/Advantages'
@@ -38,6 +39,9 @@ const App = () => {
 			</section>
 			<section className='about'>
 				<About />
+			</section>
+			<section className='faq wrapper pt-20 pb-20'>
+				<Accordion />
 			</section>
 			<section className='statistics'>
 				<Statistics />
