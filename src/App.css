@@ -4,9 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button:focus {
+	outline: 0 !important;
+}
+
 body {
 	font-family: 'Acme', sans-serif;
 	background: #1e1e1e;
+	font-size: 16px;
+	font-weight: normal;
 }
 
 .wrapper {
@@ -20,10 +32,6 @@ h3 {
 
 h5 {
 	@apply text-3xl;
-}
-
-p {
-	@apply mb-5;
 }
 
 @media (max-width: 1366px) {

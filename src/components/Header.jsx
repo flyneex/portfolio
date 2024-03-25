@@ -1,13 +1,13 @@
 import cn from 'classnames'
 import { useContext, useRef } from 'react'
 import { FaBarsStaggered } from 'react-icons/fa6'
+import { Link } from 'react-router-dom'
 import Instagram from '../../public/images/instagram-2.svg'
 import Lightning from '../../public/images/lightning.png'
 import React from '../../public/images/react.svg'
 import Button from '../UI/Button'
 import { UserContext } from '../context/UserContext'
 import { useCloseOutside } from '../hooks/useCloseOutside'
-import Navbar from './Navbar'
 
 const Header = () => {
 	const { handlerLogin, user, handlerModal, handleBar, menu, setMenu } =
@@ -15,12 +15,12 @@ const Header = () => {
 	const menuRef = useRef(null)
 	useCloseOutside(menuRef, () => {
 		if (menu) {
-			setTimeout(() => setMenu(false), 150)
+			setTimeout(() => setMenu(false), 50)
 		}
 	})
 
 	return (
-		<header className='wrapper flex justify-between items-center py-10'>
+		<header className='wrapper flex justify-between items-center py-10 border-b-0'>
 			<div className='flex gap-5 items-center'>
 				<img src={Lightning} alt='ReactLogo' style={{ width: '45px' }} />
 				<div className='text-white text-3xl'>ReactStudio</div>
@@ -37,8 +37,31 @@ const Header = () => {
 					}
 				)}
 			>
-				<div>
-					<Navbar />
+				<div className=''>
+					<nav className='lg:block'>
+						<ul className='xl:flex gap-5 text-xl'>
+							<li className='mb-5 xl:m-0'>
+								<Link className='text-white' to='/'>
+									Home
+								</Link>
+							</li>
+							<li className='mb-5 xl:m-0'>
+								<Link className='text-white' to='/page'>
+									Sample Page
+								</Link>
+							</li>
+							<li className='mb-5 xl:m-0'>
+								<Link className='text-white' to='/blog'>
+									Blog
+								</Link>
+							</li>
+							<li className='mb-5 xl:m-0'>
+								<Link className='text-white' to='/shop'>
+									Shop
+								</Link>
+							</li>
+						</ul>
+					</nav>
 				</div>
 				<div className='gap-10 xl:flex'>
 					<div className='social-hover'>

@@ -6,7 +6,7 @@ const Accordion = ({ title, content }) => {
 	const [isOpen, setIsOpen] = useState(false)
 	const [id, setId] = useState(1)
 	return (
-		<>
+		<div className='relative wrapper pt-40 pb-20'>
 			<Title title='FAQ' />
 			{answers.map(answer => (
 				<div className='acc-item mb-10' id={answer.id} key={answer.id}>
@@ -34,7 +34,7 @@ const Accordion = ({ title, content }) => {
 					</div>
 				</div>
 			))}
-		</>
+		</div>
 	)
 }
 

@@ -8,7 +8,7 @@ const Footer = () => {
 	const fy = new Date().getFullYear()
 	return (
 		<footer className='crystal-clear'>
-			<div className='wrapper flex justify-between items-center text-white py-7 border-t'>
+			<div className='wrapper flex justify-between items-center text-white py-7'>
 				<div className='flex items-center gap-3'>
 					&copy; {fy} all rights protected
 				</div>

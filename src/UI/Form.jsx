@@ -57,7 +57,7 @@ const Form = () => {
 	// }
 
 	return (
-		<div className='crystal-clear py-14'>
+		<div className='crystal-clear py-14 border-b'>
 			<div className='wrapper grid grid-cols-1 xl:grid-cols-2 gap-20'>
 				{isSuccess ? (
 					<>Form is send</>

@@ -1,9 +1,9 @@
-import Navbar from '../components/Navbar'
+import Header from '../components/Header'
 
 const NotFound404 = () => {
 	return (
 		<>
-			<Navbar />
+			<Header />
 			NotFound404
 		</>
 	)

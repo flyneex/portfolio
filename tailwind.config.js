@@ -19,6 +19,9 @@ module.exports = {
 			transformOrigin: {
 				transform50: 'translate(-50%, -50%)',
 			},
+			fontFamily: {
+				acme: ['Acme', 'sans-serif'],
+			},
 		},
 	},
 	plugins: [],

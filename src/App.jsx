@@ -1,6 +1,6 @@
-import { useState } from 'react'
 import './App.css'
 import Accordion from './UI/Accordion'
+import Counter from './UI/Counter'
 import Form from './UI/Form'
 import About from './components/About'
 import Advantages from './components/Advantages'
@@ -14,11 +14,11 @@ import Statistics from './components/Statistics'
 import Tabs from './components/Tabs'
 
 const App = () => {
-	const [count, setCount] = useState(0)
+	// const [count, setCount] = useState(0)
 
-	const handleCounter = () => {
-		setCount(prev => prev + 1)
-	}
+	// const handleCounter = () => {
+	// 	setCount(prev => prev + 1)
+	// }
 
 	return (
 		<div className='app relative overflow-hidden'>
@@ -26,6 +26,7 @@ const App = () => {
 				<Header />
 				<section className='billboard'>
 					<Greeting />
+					<Counter />
 				</section>
 			</div>
 			<section className='portfolio'>
@@ -40,7 +41,7 @@ const App = () => {
 			<section className='about'>
 				<About />
 			</section>
-			<section className='faq relative wrapper pt-40 pb-20'>
+			<section className='faq'>
 				<Accordion />
 			</section>
 			<section className='statistics'>
@@ -52,7 +53,7 @@ const App = () => {
 			<section className='form'>
 				<Form />
 			</section>
-			<Footer count={count} handleCounter={handleCounter} />
+			<Footer />
 			<Modal />
 		</div>
 	)

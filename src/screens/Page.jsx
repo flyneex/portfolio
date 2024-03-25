@@ -1,9 +1,9 @@
-import Navbar from '../components/Navbar'
+import Header from '../components/Header'
 
 const Page = () => {
 	return (
 		<>
-			<Navbar />
+			<Header />
 			<div className=''>
 				<h1>Go fuck yourself!</h1>
 			</div>
