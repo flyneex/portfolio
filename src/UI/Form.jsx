@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import Button from './Button'
+import Counter from './Counter'
 import Input from './Input'
 
 const Form = () => {
