@@ -1,6 +1,5 @@
 import './App.css'
 import Accordion from './UI/Accordion'
-import Counter from './UI/Counter'
 import Form from './UI/Form'
 import About from './components/About'
 import Advantages from './components/Advantages'
@@ -26,7 +25,6 @@ const App = () => {
 				<Header />
 				<section className='billboard'>
 					<Greeting />
-					<Counter />
 				</section>
 			</div>
 			<section className='portfolio'>

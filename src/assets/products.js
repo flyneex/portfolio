@@ -1,10 +1,22 @@
 import image1 from '../../public/images/image1.avif'
+import image10 from '../../public/images/image10.png'
+import image11 from '../../public/images/image11.jpg'
+import image12 from '../../public/images/image12.jpg'
+import image2 from '../../public/images/image2.jpg'
+import image3 from '../../public/images/image3.jpg'
+import image4 from '../../public/images/image4.jpg'
+import image5 from '../../public/images/image5.jpg'
+import image6 from '../../public/images/image6.jpg'
+import image7 from '../../public/images/image7.jpg'
+import image8 from '../../public/images/image8.jpg'
+import image9 from '../../public/images/image9.webP'
 
 export const products = [
 	{
 		id: 1,
 		img: image1,
 		name: 'X-Trails pro',
+		desc: 'Stuff is very affordable in details. Customers are very happy to dress up this. Many colors have.',
 		category: 'Hoodies',
 		size: ['xs', 's', 'm', 'l', 'xl'],
 		color: ['gray', 'silver', 'black'],
@@ -13,8 +25,9 @@ export const products = [
 	},
 	{
 		id: 2,
-		img: '../../public/images/image2.jpg',
+		img: image2,
 		name: 'Nike pro',
+		desc: 'Stuff is very affordable in details. Customers are very happy to dress up this. Many colors have.',
 		category: 'Sneakers',
 		size: ['43', '44', '45', '46', '47'],
 		color: ['white', 'silver', 'black'],
@@ -23,8 +36,9 @@ export const products = [
 	},
 	{
 		id: 3,
-		img: '../../public/images/image3.jpg',
+		img: image3,
 		name: 'Ve Leta',
+		desc: 'Stuff is very affordable in details. Customers are very happy to dress up this. Many colors have.',
 		category: 'Shoes',
 		size: ['43', '44', '45', '46', '47'],
 		color: ['white', 'gray', 'pink'],
@@ -33,8 +47,9 @@ export const products = [
 	},
 	{
 		id: 4,
-		img: '../../public/images/image4.jpg',
+		img: image4,
 		name: 'White-Off',
+		desc: 'Stuff is very affordable in details. Customers are very happy to dress up this. Many colors have.',
 		category: 'Hoodies',
 		size: ['xs', 's', 'm', 'l', 'xl'],
 		color: ['blue', 'white', 'pink'],
@@ -43,9 +58,9 @@ export const products = [
 	},
 	{
 		id: 5,
-		img: '../../public/images/image5.jpg',
+		img: image5,
 		name: 'the north face',
-		desc: 'Jacket is very affordable in details. Customers are very happy to dress up this. Many colors have.',
+		desc: 'Stuff is very affordable in details. Customers are very happy to dress up this. Many colors have.',
 		category: 'Jackets',
 		size: ['xs', 's', 'm', 'l', 'xl'],
 		color: ['black', 'red', 'yellow', 'green'],
@@ -54,8 +69,9 @@ export const products = [
 	},
 	{
 		id: 6,
-		img: '../../public/images/image6.jpg',
+		img: image6,
 		name: 'Puma pro best',
+		desc: 'Stuff is very affordable in details. Customers are very happy to dress up this. Many colors have.',
 		category: 'Sneakers',
 		size: ['43', '44', '45', '46', '47'],
 		color: ['lightblue', 'green', 'yellow'],
@@ -64,8 +80,9 @@ export const products = [
 	},
 	{
 		id: 7,
-		img: '../../public/images/image7.jpg',
+		img: image7,
 		name: 'Red-Off',
+		desc: 'Stuff is very affordable in details. Customers are very happy to dress up this. Many colors have.',
 		category: 'Hoodies',
 		size: ['xs', 's', 'm', 'l', 'xl'],
 		color: ['blue', 'red', 'yellow'],
@@ -74,8 +91,9 @@ export const products = [
 	},
 	{
 		id: 8,
-		img: '../../public/images/image8.jpg',
+		img: image8,
 		name: 'Zara flowers',
+		desc: 'Stuff is very affordable in details. Customers are very happy to dress up this. Many colors have.',
 		category: 'Jeans',
 		size: ['xs', 's', 'm', 'l', 'xl'],
 		color: ['black', 'blue'],
@@ -84,8 +102,9 @@ export const products = [
 	},
 	{
 		id: 9,
-		img: '../../public/images/image9.webP',
+		img: image9,
 		name: 'Pro super',
+		desc: 'Stuff is very affordable in details. Customers are very happy to dress up this. Many colors have.',
 		category: 'Sneakers',
 		size: ['43', '44', '45', '46', '47'],
 		color: ['gray', 'white', 'violet'],
@@ -94,8 +113,9 @@ export const products = [
 	},
 	{
 		id: 10,
-		img: '../../public/images/image10.png',
+		img: image10,
 		name: 'Vot eto shlyapa!',
+		desc: 'Stuff is very affordable in details. Customers are very happy to dress up this. Many colors have.',
 		category: 'Hats',
 		size: ['43', '44', '45', '46', '47'],
 		color: ['black'],
@@ -104,8 +124,9 @@ export const products = [
 	},
 	{
 		id: 11,
-		img: '../../public/images/image11.jpg',
-		name: 'Artyoms Bomzh Hoodies',
+		img: image11,
+		name: 'Artyoms Bomzh Hoodie',
+		desc: 'Stuff is very affordable in details. Customers are very happy to dress up this. Many colors have.',
 		category: 'Hoodies',
 		size: ['xs', 's', 'm', 'l', 'xl'],
 		color: ['gold', 'gray', 'silver'],
@@ -114,8 +135,9 @@ export const products = [
 	},
 	{
 		id: 12,
-		img: '../../public/images/image12.jpg',
+		img: image12,
 		name: 'Colourful stock base',
+		desc: 'Stuff is very affordable in details. Customers are very happy to dress up this. Many colors have.',
 		category: 'T-Shirts',
 		size: ['xs', 's', 'm', 'l', 'xl'],
 		color: ['yellow', 'black', 'gray', 'red'],

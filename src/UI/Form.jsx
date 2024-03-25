@@ -112,6 +112,9 @@ const Form = () => {
 					<div className='text-white text-3xl'>
 						<p>{form.fun}</p>
 					</div>
+					<div>
+						<Counter />
+					</div>
 				</div>
 			</div>
 		</div>
