@@ -1,4 +1,4 @@
-import { products } from '../assets/products'
+import products from '../assets/products'
 import Footer from '../components/Footer'
 import FilterCategory from '../components/shop/FilterCategory'
 import Navbar from '../components/shop/Navbar'

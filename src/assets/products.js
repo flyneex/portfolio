@@ -11,7 +11,7 @@ import image7 from '../../public/images/image7.jpg'
 import image8 from '../../public/images/image8.jpg'
 import image9 from '../../public/images/image9.jpg'
 
-export const products = [
+export default [
 	{
 		id: 1,
 		img: image1,
