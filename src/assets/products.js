@@ -9,7 +9,7 @@ import image5 from '../../public/images/image5.jpg'
 import image6 from '../../public/images/image6.jpg'
 import image7 from '../../public/images/image7.jpg'
 import image8 from '../../public/images/image8.jpg'
-import image9 from '../../public/images/image9.webP'
+import image9 from '../../public/images/image9.jpg'
 
 export const products = [
 	{
