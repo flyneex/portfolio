@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
+import Slider from '../../components/shop/Slider'
 import Footer from '../Footer'
 import FilterCategory from './FilterCategory'
 import Navbar from './Navbar'
@@ -15,6 +16,7 @@ const FilteredPage = () => {
 	return (
 		<div>
 			<Navbar />
+			<Slider />
 			<FilterCategory />
 			<div className='wrapper'>
 				<div className='flex justify-between items-center'>

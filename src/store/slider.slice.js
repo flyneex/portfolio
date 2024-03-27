@@ -4,18 +4,19 @@ import slider from '../assets/slider'
 const sliderSlice = createSlice({
 	name: 'slider',
 	initialState: {
-		value: 0,
+		value: 1,
 		length: slider.length,
 	},
 	reducers: {
 		prevSlide: (state, action) => {
-			state.value = action.payload < 0 ? state.length : action.payload
+			state.value = action.payload < 1 ? state.length : action.payload
 		},
 		nextSlide: (state, action) => {
-			state.value = action.payload > state.length ? 0 : action.payload
+			state.value = action.payload > state.length ? 1 : action.payload
 		},
 		dots: (state, action) => {
-			state.value = action.payload
+			const slide = action.payload
+			state.value = slide
 		},
 	},
 })

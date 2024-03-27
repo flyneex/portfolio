@@ -3,7 +3,7 @@ import Footer from '../components/Footer'
 import FilterCategory from '../components/shop/FilterCategory'
 import Navbar from '../components/shop/Navbar'
 import ProductCard from '../components/shop/ProductCard'
-import { Slider } from '../components/shop/Slider'
+import Slider from '../components/shop/Slider'
 
 const Shop = () => {
 	return (
