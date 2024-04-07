@@ -1,6 +1,5 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { useParams } from 'react-router-dom'
 import Slider from '../../components/shop/Slider'
 import Footer from '../Footer'
 import FilterCategory from './FilterCategory'
@@ -10,8 +9,6 @@ import ProductCard from './ProductCard'
 const FilteredPage = () => {
 	const products = useSelector(state => state.category.filteredCategory)
 	console.log('products', products)
-	const { category } = useParams()
-	console.log('category', category)
 
 	return (
 		<div>
@@ -29,6 +26,7 @@ const FilteredPage = () => {
 								name={product.name}
 								color={product.color}
 								price={product.price}
+								size={product.size}
 							/>
 						</div>
 					))}

@@ -19,23 +19,23 @@ const cartSlice = createSlice({
 				)
 				if (exist) {
 					exist.amount++
-					exist.totalPrice += productId.price
+					exist.totalPrice += action.payload.price
 					state.totalAmount++
-					state.totalPrice += productId.price
+					state.totalPrice += action.payload.price
 				} else {
 					state.cart.push({
-						id: productId.id,
-						name: productId.name,
-						img: productId.img,
-						price: productId.price,
-						totalPrice: productId.price,
-						size: productId.size,
-						text: productId.text,
-						color: productId.color,
+						id: action.payload.id,
+						name: action.payload.name,
+						img: action.payload.img,
+						price: action.payload.price,
+						totalPrice: action.payload.price,
+						size: action.payload.size,
+						text: action.payload.text,
+						color: action.payload.color,
 						amount: 1,
 					})
 					state.totalAmount++
-					state.totalPrice += productId.price
+					state.totalPrice += action.payload.price
 				}
 			} catch (err) {
 				return err
@@ -56,6 +56,7 @@ const cartSlice = createSlice({
 							product.size !== action.payload.size ||
 							product.color !== action.payload.color
 					)
+					// state.cart.splice(exist, 1)
 					state.totalAmount--
 					state.totalPrice -= action.payload.price
 				} else {

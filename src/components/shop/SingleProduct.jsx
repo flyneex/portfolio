@@ -40,6 +40,7 @@ const SingleProduct = () => {
 							</div>
 							<div>
 								<h1 className='text-white'>{product.name}</h1>
+								<div className='text-white'>{product.category}</div>
 								<div className='text-white'>{product.desc}</div>
 								<div>
 									{product.size && (
@@ -71,8 +72,10 @@ const SingleProduct = () => {
 												return (
 													<div
 														key={idx}
-														className={`w-[30px] h-[30px] rounded-full cursor-pointer border-transparent ${
-															c === color ? 'border-4 border-lime-300' : ''
+														className={`w-[30px] h-[30px] rounded-full cursor-pointer ${
+															c === color
+																? 'border-2 border-lime-300'
+																: 'border-transparent'
 														}`}
 														style={{ backgroundColor: c }}
 														onClick={e => selectedColor(c)}

@@ -30,6 +30,7 @@ const Cart = () => {
 										style={{ backgroundColor: item.color }}
 									></div>
 									<div>{item.price}</div>
+									<div>{item.totalPrice}</div>
 								</div>
 							</div>
 							<div onClick={() => dispatch(removeFromCart(item))}>
@@ -37,6 +38,7 @@ const Cart = () => {
 							</div>
 						</div>
 					))}
+					<div className='text-red-300'>TOTAL: {totalAmount}</div>
 					<div className='text-red-600'>TOTAL: {totalPrice}</div>
 				</div>
 			) : (
