@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Photo from '../../public/images/photo.jpeg'
 import Title from '../UI/Title'
+import Photo from '/images/photo.jpeg'
 
 const About = () => {
 	//my age

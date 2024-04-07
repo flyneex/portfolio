@@ -1,8 +1,8 @@
-import slide1 from '../../public/images/slide1.jpg'
-import slide2 from '../../public/images/slide2.jpg'
-import slide3 from '../../public/images/slide3.jpg'
-import slide4 from '../../public/images/slide4.jpg'
-import slide5 from '../../public/images/slide5.jpg'
+import slide1 from '/images/slide1.jpg'
+import slide2 from '/images/slide2.jpg'
+import slide3 from '/images/slide3.jpg'
+import slide4 from '/images/slide4.jpg'
+import slide5 from '/images/slide5.jpg'
 
 export default [
 	{

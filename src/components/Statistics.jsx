@@ -36,52 +36,32 @@ const Statistics = () => {
 				className='text-white text-4xl carousel'
 			>
 				<div>
-					<img
-						src='../../public/images/javascript.svg'
-						alt=''
-						style={{ width: '45px' }}
-					/>
+					<img src='/images/javascript.svg' alt='' style={{ width: '45px' }} />
 					<div>JavaScript</div>
 				</div>
 				<div>
-					<img
-						src='../../public/images/react.svg'
-						alt=''
-						style={{ width: '45px' }}
-					/>
+					<img src='/images/react.svg' alt='' style={{ width: '45px' }} />
 					<div>React</div>
 				</div>
 				<div>
-					<img
-						src='../../public/images/html-5.svg'
-						alt=''
-						style={{ width: '45px' }}
-					/>
+					<img src='/images/html-5.svg' alt='' style={{ width: '45px' }} />
 					<div>HTML</div>
 				</div>
 				<div>
 					<img
 						className='mix-blend-color-burn'
-						src='../../public/images/css-3.svg'
+						src='/images/css-3.svg'
 						alt=''
 						style={{ width: '45px' }}
 					/>
 					<div>CSS</div>
 				</div>
 				<div>
-					<img
-						src='../../public/images/typescript.svg'
-						alt=''
-						style={{ width: '45px' }}
-					/>
+					<img src='/images/typescript.svg' alt='' style={{ width: '45px' }} />
 					<div>TypeScript</div>
 				</div>
 				<div>
-					<img
-						src='../../public/images/node.svg'
-						alt=''
-						style={{ width: '45px' }}
-					/>
+					<img src='/images/node.svg' alt='' style={{ width: '45px' }} />
 					<div>Node</div>
 				</div>
 			</Carousel>

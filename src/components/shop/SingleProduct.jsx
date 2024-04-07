@@ -1,20 +1,33 @@
 import React, { useState } from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import Button from '../../UI/Button'
+import { addToCart } from '../../store/cart.slice'
 import Footer from '../Footer'
-import Header from '../Header'
+import Navbar from './Navbar'
 
 const SingleProduct = () => {
 	const getProduct = useSelector(state => state.product.singleProduct)
 	const [size, setSize] = useState(getProduct[0].size[0])
 	const [color, setColor] = useState(getProduct[0].color[0])
+	const selectedColor = clr => {
+		setColor(clr === color ? null : clr)
+	}
+
+	const dispatch = useDispatch()
 	console.log(size)
 	console.log(color)
 	console.log('getProduct1', getProduct)
 
+	const totalAmount = useSelector(state => state.cart.totalAmount)
+	const totalPrice = useSelector(state => state.cart.totalPrice)
+	const getCart = useSelector(state => state.cart.cart)
+	console.log(getCart)
+	console.log(totalAmount)
+	console.log(totalPrice)
+
 	return (
 		<div>
-			<Header />
+			<Navbar />
 			<div className='wrapper'>
 				{getProduct.map(product => {
 					return (
@@ -58,11 +71,11 @@ const SingleProduct = () => {
 												return (
 													<div
 														key={idx}
-														className='w-[20px] h-[20px] rounded-full'
+														className={`w-[30px] h-[30px] rounded-full cursor-pointer border-transparent ${
+															c === color ? 'border-4 border-lime-300' : ''
+														}`}
 														style={{ backgroundColor: c }}
-														onClick={e =>
-															setColor(e.target.style.backgroundColor)
-														}
+														onClick={e => selectedColor(c)}
 													></div>
 												)
 											})}
@@ -73,7 +86,22 @@ const SingleProduct = () => {
 								<div className='text-white text-2xl font-bold'>
 									${product.price}
 								</div>
-								<div>
+								<div
+									onClick={() =>
+										dispatch(
+											addToCart({
+												id: product.id,
+												name: product.name,
+												img: product.img,
+												color: color,
+												size: size,
+												price: product.price,
+												amount: 1,
+												totalPrice: product.price,
+											})
+										)
+									}
+								>
 									<Button variant='light' text='Add to cart' />
 								</div>
 							</div>

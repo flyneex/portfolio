@@ -1,8 +1,8 @@
-import Apple from '../../public/images/apple.svg'
-import Github from '../../public/images/github.svg'
-import Instagram from '../../public/images/instagram.svg'
-import Telegram from '../../public/images/telegram.svg'
-import Whatsapp from '../../public/images/whatsapp.svg'
+import Apple from '/images/apple.svg'
+import Github from '/images/github.svg'
+import Instagram from '/images/instagram.svg'
+import Telegram from '/images/telegram.svg'
+import Whatsapp from '/images/whatsapp.svg'
 
 const Footer = () => {
 	const fy = new Date().getFullYear()

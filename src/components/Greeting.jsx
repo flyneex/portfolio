@@ -1,9 +1,9 @@
 import cn from 'classnames'
 import { useContext, useEffect, useState } from 'react'
-import Photo from '../../public/images/0e20.png'
-import JavaScript from '../../public/images/javascript.svg'
-import React from '../../public/images/react.svg'
 import { UserContext } from '../context/UserContext'
+import Photo from '/images/0e20.png'
+import JavaScript from '/images/javascript.svg'
+import React from '/images/react.svg'
 
 const Greeting = () => {
 	const [text, setText] = useState('')

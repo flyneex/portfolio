@@ -1,6 +1,6 @@
-import WTF from '/public/images/77-770672.png'
-import Music from '/public/images/music-snap.png'
-import Todo from '/public/images/todo-snap.png'
+import WTF from '/images/77-770672.png'
+import Music from '/images/music-snap.png'
+import Todo from '/images/todo-snap.png'
 
 export default [
 	{
@@ -31,7 +31,7 @@ export default [
 	// 	id: 4,
 	// 	title: 'Coming soon',
 	// 	desc: 'Lorem ipsum',
-	// 	img: '../../public/images/77-770672.png',
+	// 	img: '/images/77-770672.png',
 	// 	slug: 'coming-soon',
 	// },
 ]

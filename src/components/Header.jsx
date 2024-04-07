@@ -2,12 +2,12 @@ import cn from 'classnames'
 import { useContext, useRef } from 'react'
 import { FaBarsStaggered } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
-import Instagram from '../../public/images/instagram-2.svg'
-import Lightning from '../../public/images/lightning.png'
-import React from '../../public/images/react.svg'
 import Button from '../UI/Button'
 import { UserContext } from '../context/UserContext'
 import { useCloseOutside } from '../hooks/useCloseOutside'
+import Instagram from '/images/instagram-2.svg'
+import Lightning from '/images/lightning.png'
+import React from '/images/react.svg'
 
 const Header = () => {
 	const { handlerLogin, user, handlerModal, handleBar, menu, setMenu } =

@@ -1,7 +1,13 @@
+import { useState } from 'react'
+import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-import Lightning from '../../../public/images/lightning.png'
+import Cart from './Cart'
+import Lightning from '/images/lightning.png'
 
 const Navbar = () => {
+	const [cart, setCart] = useState(false)
+	const countItems = useSelector(state => state.cart.totalAmount)
+
 	return (
 		<>
 			<div className='wrapper flex justify-between items-center py-5'>
@@ -29,7 +35,10 @@ const Navbar = () => {
 						</svg>
 						<p className='text-white font-medium'>WishList</p>
 					</div>
-					<div className='flex gap-2'>
+					<div className='flex gap-2 relative' onClick={() => setCart(!cart)}>
+						<span className='absolute bottom-4 left-1 rounded-full text-center text-black font-bold bg-white p-1 w-[20px] h-[20px] flex items-center justify-center'>
+							{countItems && <>{countItems}</>}
+						</span>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							fill='none'
@@ -46,6 +55,7 @@ const Navbar = () => {
 						</svg>
 						<p className='text-white font-medium'>Cart</p>
 					</div>
+					{cart && <Cart />}
 				</div>
 			</div>
 		</>
