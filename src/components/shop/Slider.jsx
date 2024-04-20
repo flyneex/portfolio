@@ -7,7 +7,7 @@ const Slider = () => {
 	console.log(slideIndex)
 	const dispatch = useDispatch()
 	return (
-		<div className='wrapper relative'>
+		<div className='wrapper'>
 			{slider.map((slide, idx) => (
 				<div
 					className={
@@ -27,35 +27,33 @@ const Slider = () => {
 							</p>
 						</div>
 					)}
+					<button
+						className='absolute left-0 top-1/2 -translate-y-1/2'
+						onClick={() => dispatch(prevSlide(slideIndex - 1))}
+					>
+						Prev
+					</button>
+					<button
+						className='absolute right-0 top-1/2 -translate-y-1/2'
+						onClick={() => dispatch(nextSlide(slideIndex + 1))}
+					>
+						Next
+					</button>
+					<div className='absolute bottom-0 flex gap-3 left-1/2 translate-x-[-50%]'>
+						{slider.map((dot, idx) => (
+							<div
+								key={idx}
+								className={
+									dot.id === slideIndex
+										? 'bg-blue-500 w-[15px] h-[15px] rounded-full'
+										: 'bg-white w-[15px] h-[15px] rounded-full cursor-pointer'
+								}
+								onClick={() => dispatch(dots(dot.id))}
+							></div>
+						))}
+					</div>
 				</div>
 			))}
-			<div className='relative'>
-				<button
-					className='absolute left-0 top-1/2'
-					onClick={() => dispatch(prevSlide(slideIndex - 1))}
-				>
-					Prev
-				</button>
-				<button
-					className='absolute right-0 top-1/2'
-					onClick={() => dispatch(nextSlide(slideIndex + 1))}
-				>
-					Next
-				</button>
-			</div>
-			<div className='absolute bottom-0 flex gap-3 left-1/2 translate-x-[-50%]'>
-				{slider.map((dot, idx) => (
-					<div
-						key={idx}
-						className={
-							dot.id === slideIndex
-								? 'bg-blue-500 w-[15px] h-[15px] rounded-full'
-								: 'bg-white w-[15px] h-[15px] rounded-full cursor-pointer'
-						}
-						onClick={() => dispatch(dots(dot.id))}
-					></div>
-				))}
-			</div>
 		</div>
 	)
 }

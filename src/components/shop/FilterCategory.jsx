@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { filteredCategory } from '../../store/filterCategory.slice'
+import { filteredCategory } from '../../store/product.slice'
 
 const FilterCategory = () => {
 	const categoriesButtons = [
@@ -17,14 +17,14 @@ const FilterCategory = () => {
 	return (
 		<div className='wrapper'>
 			<div className='flex justify-center items-center gap-6 my-10'>
-				{categoriesButtons.map((btn, idx) => {
+				{categoriesButtons.map((category, idx) => {
 					return (
-						<Link to={'/shop/' + btn} key={idx}>
+						<Link to={'/shop/' + category} key={idx}>
 							<div
 								className='text-white border rounded-lg border-blue-500 p-3 uppercase cursor-pointer hover:bg-blue-300 duration-300 ease-in-out'
-								onClick={() => dispatch(filteredCategory(btn))}
+								onClick={() => dispatch(filteredCategory(category))}
 							>
-								{btn}
+								{category}
 							</div>
 						</Link>
 					)

@@ -1,12 +1,9 @@
-import { useParams } from 'react-router-dom'
 import Form from '../UI/Form'
 import projects from '../assets/projects'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 
 const Project = () => {
-	let { slug } = useParams()
-
 	function convertToSlug(title) {
 		return title
 			.toLowerCase()
@@ -15,7 +12,7 @@ const Project = () => {
 	}
 
 	const details = projects.find(
-		project => convertToSlug(project.title) === slug
+		project => convertToSlug(project.title) === project.slug
 	)
 
 	return (

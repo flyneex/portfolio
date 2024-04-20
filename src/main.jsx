@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 import FilteredPage from './components/shop/FilteredPage.jsx'
+import Login from './components/shop/Login.jsx'
 import SingleProduct from './components/shop/SingleProduct.jsx'
 import { UserProvider } from './context/UserContext.jsx'
 import './index.css'
@@ -36,16 +37,20 @@ const router = createBrowserRouter([
 		element: <Blog />,
 	},
 	{
-		path: 'shop',
-		element: <Shop />,
+		path: ':category/:id',
+		element: <SingleProduct />,
 	},
 	{
 		path: 'shop/:category',
 		element: <FilteredPage />,
 	},
 	{
-		path: ':category/:id',
-		element: <SingleProduct />,
+		path: 'shop',
+		element: <Shop />,
+	},
+	{
+		path: 'login',
+		element: <Login />,
 	},
 ])
 

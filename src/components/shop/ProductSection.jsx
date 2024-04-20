@@ -1,8 +1,11 @@
 import products from '../../assets/products'
+import { useGetAllProductsQuery } from '../../store/productApi'
 import FilterCategory from './FilterCategory'
 import ProductCard from './ProductCard'
 
 const ProductSection = () => {
+	const { data, error, isLoading } = useGetAllProductsQuery()
+
 	return (
 		<div className='wrapper'>
 			<FilterCategory />
@@ -21,6 +24,20 @@ const ProductSection = () => {
 					</div>
 				))}
 			</div>
+			{isLoading ? (
+				<div>Loading...</div>
+			) : error ? (
+				<div>Error</div>
+			) : (
+				<div>
+					{data?.map(product => (
+						<div key={product.id}>
+							<div>{product.name}</div>
+							<div>{product.img}</div>
+						</div>
+					))}
+				</div>
+			)}
 		</div>
 	)
 }

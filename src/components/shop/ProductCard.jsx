@@ -1,11 +1,10 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { singleProduct } from '../../store/product.slice'
 
-const ProductCard = ({ id, img, name, color, price, size }) => {
+const ProductCard = ({ id, img, name, color, price, size, category }) => {
 	const dispatch = useDispatch()
-	const { category } = useParams()
 	return (
 		<div onClick={() => dispatch(singleProduct(id))}>
 			<div>

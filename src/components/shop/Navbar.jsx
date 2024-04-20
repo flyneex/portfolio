@@ -1,12 +1,16 @@
 import { useState } from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { logout } from '../../store/auth.slice'
 import Cart from './Cart'
 import Lightning from '/images/lightning.png'
 
 const Navbar = () => {
 	const [cart, setCart] = useState(false)
 	const countItems = useSelector(state => state.cart.totalAmount)
+	const userAuth = useSelector(state => state.auth.user)
+	const { name } = userAuth
+	const dispatch = useDispatch()
 
 	return (
 		<>
@@ -61,6 +65,11 @@ const Navbar = () => {
 						<p className='text-white font-medium'>Cart</p>
 					</div>
 					{cart && <Cart />}
+					{userAuth && (
+						<div className='text-white' onClick={() => dispatch(logout)}>
+							Hello, {name}
+						</div>
+					)}
 				</div>
 			</div>
 		</>
